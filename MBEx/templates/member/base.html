@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 회원관리 </title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style_member.css'%}">
+		<script src="{% static 'js/jquery-3.6.4.js' %}"></script>
+		<script src="{% static 'js/script_member.js' %}"></script>
+	</head>
+	<body>
+		{% block menu %}
+			<a href="/member/main"> 로그인 </a> &nbsp;&nbsp;&nbsp;		<!-- localhost:8000/member/main -->
+			<a href="/member/input"> 회원가입 </a>	&nbsp;&nbsp;&nbsp;		<!-- localhost:8000/member/input -->
+			<a href="/board/list"> 게시판 </a> &nbsp;&nbsp;&nbsp;			<!-- localhost:8000/board/list -->
+		{% endblock %}
+		<br><br>						
+		{% block title %} <h2> 회원관리 </h2> {% endblock %}
+		<br><br>
+		{% block content %}
+		
+		{% endblock %}
+	</body>
+</html>

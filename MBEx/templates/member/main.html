@@ -1,0 +1,52 @@
+{% extends "member/base.html" %}
+
+{% block title %} <h2> 메인 페이지 </h2> {% endblock %}
+
+{% block content %}
+{% if memid %}
+	<table>
+		<tr>
+			<td align="center">
+				<span>{{ memid }}</span>님 안녕하세요.
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<input class="inputbutton" type="button" value="정보수정"
+					onclick="location='update?id={{memid}}'">
+				<input class="inputbutton" type="button" value="회원탈퇴"
+					onclick="location='delete?id={{memid}}'">
+				<input class="inputbutton" type="button" value="로그아웃"
+					onclick="location='logout'">
+			</th>
+		</tr>
+	</table>
+{% else %}
+	<form method="post" action="login" name="mainform">
+		<table>
+			<tr>
+				<th colspan="2">
+					비회원이시면 회원가입을 해주세요
+				</th>	
+			</tr>
+			<tr>
+				<th> 아이디 </th>
+				<td> <input class="input" type="text" name="id" maxlength="50" autofocus> </td>
+			</tr>
+			<tr>
+				<th> 비밀번호 </th>
+				<td> <input class="input" type="password" name="passwd" maxlength="50"> </td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input class="inputbutton" type="submit" value="로그인">
+					<input class="inputbutton" type="reset" value="취소">
+					<input class="inputbutton" type="button" value="회원가입"
+						onclick="location='input'"> 
+				</th>
+			</tr>
+		</table>
+	</form>
+		
+{% endif %}
+{% endblock %}

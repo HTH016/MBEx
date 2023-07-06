@@ -1,0 +1,2889 @@
+[2023-06-19 11:18:58] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-19 11:18:58] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-19 11:18:58] WARNING [django.server : 212] "GET /favicon.ico HTTP/1.1" 404 2215
+[2023-06-19 11:19:04] WARNING [django.request : 241] Not Found: /board/list
+[2023-06-19 11:19:04] WARNING [django.request : 241] Not Found: /board/list
+[2023-06-19 11:19:04] WARNING [django.server : 212] "GET /board/list HTTP/1.1" 404 2212
+[2023-06-19 11:19:25] WARNING [django.request : 241] Not Found: /member/logon
+[2023-06-19 11:19:25] WARNING [django.request : 241] Not Found: /member/logon
+[2023-06-19 11:19:25] WARNING [django.server : 212] "POST /member/logon HTTP/1.1" 404 2629
+[2023-06-19 11:31:48] WARNING [django.request : 241] Not Found: /board/list
+[2023-06-19 11:31:48] WARNING [django.request : 241] Not Found: /board/list
+[2023-06-19 11:31:48] WARNING [django.server : 212] "GET /board/list HTTP/1.1" 404 2212
+[2023-06-19 11:37:49] ERROR [django.request : 241] Internal Server Error: /member/main
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 17, in get
+    template = loader.get_template( "member/main.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '( "memid" )' from 'request.session.get( "memid" )'
+[2023-06-19 11:37:49] ERROR [django.request : 241] Internal Server Error: /member/main
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 17, in get
+    template = loader.get_template( "member/main.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '( "memid" )' from 'request.session.get( "memid" )'
+[2023-06-19 11:37:49] ERROR [django.server : 212] "GET /member/main HTTP/1.1" 500 185198
+[2023-06-19 11:37:52] ERROR [django.request : 241] Internal Server Error: /member/main
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 17, in get
+    template = loader.get_template( "member/main.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '( "memid" )' from 'request.session.get( "memid" )'
+[2023-06-19 11:37:52] ERROR [django.request : 241] Internal Server Error: /member/main
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 17, in get
+    template = loader.get_template( "member/main.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '( "memid" )' from 'request.session.get( "memid" )'
+[2023-06-19 11:37:52] ERROR [django.server : 212] "GET /member/main HTTP/1.1" 500 185198
+[2023-06-19 11:42:23] WARNING [django.request : 241] Not Found: /survey/main
+[2023-06-19 11:42:23] WARNING [django.request : 241] Not Found: /survey/main
+[2023-06-19 11:42:23] WARNING [django.server : 212] "GET /survey/main HTTP/1.1" 404 2215
+[2023-06-19 11:46:59] WARNING [django.request : 241] Not Found: /survey/main
+[2023-06-19 11:46:59] WARNING [django.request : 241] Not Found: /survey/main
+[2023-06-19 11:46:59] WARNING [django.server : 212] "GET /survey/main HTTP/1.1" 404 2215
+[2023-06-19 11:47:10] ERROR [django.request : 241] Internal Server Error: /member/logout
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 85, in get
+    return redirect( "" )
+  File "C:\Python38\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Python38\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Python38\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+[2023-06-19 11:47:10] ERROR [django.request : 241] Internal Server Error: /member/logout
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 85, in get
+    return redirect( "" )
+  File "C:\Python38\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Python38\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Python38\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+[2023-06-19 11:47:10] ERROR [django.server : 212] "GET /member/logout HTTP/1.1" 500 90477
+[2023-06-19 13:09:30] WARNING [django.request : 241] Not Found: /member/confirmid.do
+[2023-06-19 13:09:30] WARNING [django.request : 241] Not Found: /member/confirmid.do
+[2023-06-19 13:09:30] WARNING [django.server : 212] "GET /member/confirmid.do?id=asfd HTTP/1.1" 404 2832
+[2023-06-19 13:09:35] WARNING [django.request : 241] Not Found: /member/confirmid.do
+[2023-06-19 13:09:35] WARNING [django.request : 241] Not Found: /member/confirmid.do
+[2023-06-19 13:09:35] WARNING [django.server : 212] "GET /member/confirmid.do?id=aaa HTTP/1.1" 404 2831
+[2023-06-19 13:24:56] WARNING [django.request : 241] Not Found: /member/confirmid.do
+[2023-06-19 13:24:56] WARNING [django.request : 241] Not Found: /member/confirmid.do
+[2023-06-19 13:24:56] WARNING [django.server : 212] "GET /member/confirmid.do?id=asdfsadf HTTP/1.1" 404 3013
+[2023-06-19 13:26:16] WARNING [django.request : 241] Not Found: /member/confirmidfsdg
+[2023-06-19 13:26:16] WARNING [django.request : 241] Not Found: /member/confirmidfsdg
+[2023-06-19 13:26:16] WARNING [django.server : 212] "GET /member/confirmidfsdg HTTP/1.1" 404 3004
+[2023-06-19 13:27:26] WARNING [django.request : 241] Not Found: /member/confirmidfsdg
+[2023-06-19 13:27:26] WARNING [django.request : 241] Not Found: /member/confirmidfsdg
+[2023-06-19 13:27:26] WARNING [django.server : 212] "GET /member/confirmidfsdg HTTP/1.1" 404 3004
+[2023-06-19 13:28:34] WARNING [django.request : 241] Not Found: /member/confirmidfsdg
+[2023-06-19 13:28:34] WARNING [django.request : 241] Not Found: /member/confirmidfsdg
+[2023-06-19 13:28:34] WARNING [django.server : 212] "GET /member/confirmidfsdg HTTP/1.1" 404 3004
+[2023-06-19 13:30:11] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:30:11] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:30:11] WARNING [django.server : 212] "GET /member/confirmid?id=dfsagds HTTP/1.1" 404 3003
+[2023-06-19 13:30:48] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:30:48] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:30:48] WARNING [django.server : 212] "GET /member/confirmid?id=dfsagds HTTP/1.1" 404 3003
+[2023-06-19 13:32:11] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:32:11] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:32:11] WARNING [django.server : 212] "GET /member/confirmid?id=dfsagds HTTP/1.1" 404 3003
+[2023-06-19 13:38:01] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:38:01] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:38:01] WARNING [django.server : 212] "GET /member/confirmid?id=asdf HTTP/1.1" 404 3000
+[2023-06-19 13:38:09] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:38:09] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:38:09] WARNING [django.server : 212] "GET /member/confirmid?id=asdf HTTP/1.1" 404 3000
+[2023-06-19 13:42:41] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:42:41] WARNING [django.request : 241] Not Found: /member/confirmid
+[2023-06-19 13:42:41] WARNING [django.server : 212] "GET /member/confirmid?id=rgsdf HTTP/1.1" 404 3001
+[2023-06-19 13:44:23] ERROR [django.request : 241] Internal Server Error: /member/confirm
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 84, in get
+    del request.session["memid"]
+  File "C:\Python38\lib\site-packages\django\contrib\sessions\backends\base.py", line 60, in __delitem__
+    del self._session[key]
+KeyError: 'memid'
+[2023-06-19 13:44:23] ERROR [django.request : 241] Internal Server Error: /member/confirm
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 84, in get
+    del request.session["memid"]
+  File "C:\Python38\lib\site-packages\django\contrib\sessions\backends\base.py", line 60, in __delitem__
+    del self._session[key]
+KeyError: 'memid'
+[2023-06-19 13:44:23] ERROR [django.server : 212] "GET /member/confirm?id=dsfgesfg HTTP/1.1" 500 76685
+[2023-06-19 14:22:46] ERROR [django.request : 241] Internal Server Error: /member/confirm
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 84, in get
+    del request.session["memid"]
+  File "C:\Python38\lib\site-packages\django\contrib\sessions\backends\base.py", line 60, in __delitem__
+    del self._session[key]
+KeyError: 'memid'
+[2023-06-19 14:22:46] ERROR [django.request : 241] Internal Server Error: /member/confirm
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 84, in get
+    del request.session["memid"]
+  File "C:\Python38\lib\site-packages\django\contrib\sessions\backends\base.py", line 60, in __delitem__
+    del self._session[key]
+KeyError: 'memid'
+[2023-06-19 14:22:46] ERROR [django.server : 212] "GET /member/confirm?id=sdfsadf HTTP/1.1" 500 76676
+[2023-06-19 14:29:45] ERROR [django.request : 241] Internal Server Error: /member/confirm
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 84, in get
+    del request.session["memid"]
+  File "C:\Python38\lib\site-packages\django\contrib\sessions\backends\base.py", line 60, in __delitem__
+    del self._session[key]
+KeyError: 'memid'
+[2023-06-19 14:29:45] ERROR [django.request : 241] Internal Server Error: /member/confirm
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 84, in get
+    del request.session["memid"]
+  File "C:\Python38\lib\site-packages\django\contrib\sessions\backends\base.py", line 60, in __delitem__
+    del self._session[key]
+KeyError: 'memid'
+[2023-06-19 14:29:45] ERROR [django.server : 212] "GET /member/confirm?id=dfghfg HTTP/1.1" 500 76667
+[2023-06-19 14:44:51] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:44:51] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:44:51] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95110
+[2023-06-19 14:44:56] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:44:56] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:44:56] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95106
+[2023-06-19 14:45:01] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:45:01] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:45:01] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95102
+[2023-06-19 14:47:36] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:47:36] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:47:36] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95146
+[2023-06-19 14:47:40] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:47:40] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:47:40] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95134
+[2023-06-19 14:48:48] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:48:48] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:48:48] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95109
+[2023-06-19 14:48:51] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:48:51] ERROR [django.request : 241] Internal Server Error: /member/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 106, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 117, in post
+    dto = Member.objects.get( id = id )
+  File "C:\Python38\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+member.models.Member.DoesNotExist: Member matching query does not exist.
+[2023-06-19 14:48:51] ERROR [django.server : 212] "POST /member/delete HTTP/1.1" 500 95109
+[2023-06-20 09:03:32] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-20 09:03:32] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-20 09:03:32] WARNING [django.server : 212] "GET /favicon.ico HTTP/1.1" 404 2215
+[2023-06-20 09:18:54] ERROR [django.request : 241] Internal Server Error: /member/update
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 134, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 148, in post
+    template = loader.get_template( "member/updatepro.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '"Y-m-d"' from 'dto.logtime|date"Y-m-d"'
+[2023-06-20 09:18:54] ERROR [django.request : 241] Internal Server Error: /member/update
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 134, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 148, in post
+    template = loader.get_template( "member/updatepro.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python38\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python38\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '"Y-m-d"' from 'dto.logtime|date"Y-m-d"'
+[2023-06-20 09:18:54] ERROR [django.server : 212] "POST /member/update HTTP/1.1" 500 187659
+[2023-06-20 09:22:25] WARNING [django.request : 241] Not Found: /member/updatepro
+[2023-06-20 09:22:25] WARNING [django.request : 241] Not Found: /member/updatepro
+[2023-06-20 09:22:25] WARNING [django.server : 212] "POST /member/updatepro HTTP/1.1" 404 3343
+[2023-06-20 09:32:18] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: member_member.logtime
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 186, in post
+    dto.save()
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: member_member.logtime
+[2023-06-20 09:32:18] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: member_member.logtime
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 186, in post
+    dto.save()
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: member_member.logtime
+[2023-06-20 09:32:18] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 167191
+[2023-06-20 09:32:31] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: member_member.logtime
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 186, in post
+    dto.save()
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: member_member.logtime
+[2023-06-20 09:32:31] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: member_member.logtime
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 186, in post
+    dto.save()
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: member_member.logtime
+[2023-06-20 09:32:31] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 167191
+[2023-06-20 09:33:09] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: member_member.logtime
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 186, in post
+    dto.save()
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: member_member.logtime
+[2023-06-20 09:33:09] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: member_member.logtime
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 186, in post
+    dto.save()
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "C:\Python38\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Python38\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: member_member.logtime
+[2023-06-20 09:33:09] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 167191
+[2023-06-20 09:36:57] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 189, in post
+    logtime = dto.logetime
+AttributeError: 'Member' object has no attribute 'logetime'
+[2023-06-20 09:36:57] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 189, in post
+    logtime = dto.logetime
+AttributeError: 'Member' object has no attribute 'logetime'
+[2023-06-20 09:36:57] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 88158
+[2023-06-20 09:37:13] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 189, in post
+    logtime = dto.logetime
+AttributeError: 'Member' object has no attribute 'logetime'
+[2023-06-20 09:37:13] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 168, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\member\views.py", line 189, in post
+    logtime = dto.logetime
+AttributeError: 'Member' object has no attribute 'logetime'
+[2023-06-20 09:37:14] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 88158
+[2023-06-20 09:37:33] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:37:33] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:37:33] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 64782
+[2023-06-20 09:37:50] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:37:50] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:37:50] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 64782
+[2023-06-20 09:37:53] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:37:53] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:37:53] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 64782
+[2023-06-20 09:38:05] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:38:05] ERROR [django.request : 241] Internal Server Error: /member/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Python38\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'function' object has no attribute 'get'
+[2023-06-20 09:38:05] ERROR [django.server : 212] "POST /member/updatepro HTTP/1.1" 500 64782
+[2023-06-20 10:51:02] WARNING [django.request : 241] Not Found: /board
+[2023-06-20 10:51:02] WARNING [django.request : 241] Not Found: /board
+[2023-06-20 10:51:02] WARNING [django.server : 212] "GET /board HTTP/1.1" 404 2303
+[2023-06-20 11:28:13] WARNING [django.request : 241] Not Found: /board/board/list
+[2023-06-20 11:28:13] WARNING [django.request : 241] Not Found: /board/board/list
+[2023-06-20 11:28:13] WARNING [django.server : 212] "GET /board/board/list HTTP/1.1" 404 2572
+[2023-06-20 11:28:20] WARNING [django.request : 241] Not Found: /board/board/list
+[2023-06-20 11:28:20] WARNING [django.request : 241] Not Found: /board/board/list
+[2023-06-20 11:28:20] WARNING [django.server : 212] "GET /board/board/list HTTP/1.1" 404 2572
+[2023-06-20 11:33:55] WARNING [django.request : 241] Not Found: /board/null
+[2023-06-20 11:33:55] WARNING [django.request : 241] Not Found: /board/null
+[2023-06-20 11:33:55] WARNING [django.server : 212] "GET /board/null HTTP/1.1" 404 2554
+[2023-06-20 11:34:17] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view board.views.view didn't return an HttpResponse object. It returned None instead.
+[2023-06-20 11:34:17] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view board.views.view didn't return an HttpResponse object. It returned None instead.
+[2023-06-20 11:34:17] ERROR [django.server : 212] "POST /board/write HTTP/1.1" 500 66022
+[2023-06-20 13:35:14] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 21, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 68, in post
+    regdate = DateFormat( datetime.now() ).format( "Ymd" ),
+NameError: name 'DateFormat' is not defined
+[2023-06-20 13:35:14] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 21, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 68, in post
+    regdate = DateFormat( datetime.now() ).format( "Ymd" ),
+NameError: name 'DateFormat' is not defined
+[2023-06-20 13:35:14] ERROR [django.server : 212] "POST /board/write HTTP/1.1" 500 87379
+[2023-06-20 15:13:41] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 61, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 88, in get
+    re.restep = int( re.restep ) + 1
+UnboundLocalError: local variable 're' referenced before assignment
+[2023-06-20 15:13:41] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 61, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 88, in get
+    re.restep = int( re.restep ) + 1
+UnboundLocalError: local variable 're' referenced before assignment
+[2023-06-20 15:13:41] ERROR [django.server : 212] "GET /board/write?num=2&ref=2&restep=0&relevel=0 HTTP/1.1" 500 88210
+[2023-06-20 15:13:45] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 61, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 88, in get
+    re.restep = int( re.restep ) + 1
+UnboundLocalError: local variable 're' referenced before assignment
+[2023-06-20 15:13:45] ERROR [django.request : 241] Internal Server Error: /board/write
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 61, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 88, in get
+    re.restep = int( re.restep ) + 1
+UnboundLocalError: local variable 're' referenced before assignment
+[2023-06-20 15:13:45] ERROR [django.server : 212] "GET /board/write?num=2&ref=2&restep=0&relevel=0 HTTP/1.1" 500 88210
+[2023-06-20 15:26:43] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-20 15:26:43] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-20 15:26:43] WARNING [django.server : 212] "GET /favicon.ico HTTP/1.1" 404 2323
+[2023-06-20 15:41:39] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 26, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=3'
+[2023-06-20 15:41:39] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 26, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=3'
+[2023-06-20 15:41:39] ERROR [django.server : 212] "GET /board/list?pagenum==3 HTTP/1.1" 500 72486
+[2023-06-20 15:42:24] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 26, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=3'
+[2023-06-20 15:42:24] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 26, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=3'
+[2023-06-20 15:42:24] ERROR [django.server : 212] "GET /board/list?pagenum==3 HTTP/1.1" 500 72486
+[2023-06-21 09:39:26] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:39:26] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:39:26] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:39:59] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:39:59] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:39:59] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:40:00] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:40:00] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:40:00] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:40:01] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:40:01] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:40:01] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:41:06] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:41:06] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:41:06] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:42:16] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:42:16] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:42:16] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:42:16] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:42:16] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:42:16] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:43:05] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:43:05] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:43:05] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:45:12] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:45:12] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:45:12] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74149
+[2023-06-21 09:45:16] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=3'
+[2023-06-21 09:45:16] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=3'
+[2023-06-21 09:45:16] ERROR [django.server : 212] "GET /board/list?pagenum==3 HTTP/1.1" 500 74149
+[2023-06-21 09:46:22] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:46:22] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:46:22] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74149
+[2023-06-21 09:47:47] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:47:47] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:47:47] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:47:48] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:47:48] ERROR [django.request : 241] Internal Server Error: /board/list
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 28, in get
+    pagenum = int( pagenum )
+ValueError: invalid literal for int() with base 10: '=2'
+[2023-06-21 09:47:48] ERROR [django.server : 212] "GET /board/list?pagenum==2 HTTP/1.1" 500 74286
+[2023-06-21 09:53:41] ERROR [django.request : 241] Internal Server Error: /board/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 137, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 139, in get
+    template = loader.get_template( "board/delete.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "C:\Python38\lib\site-packages\django\template\loaders\filesystem.py", line 23, in get_contents
+    return fp.read()
+  File "C:\Python38\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb1 in position 58: invalid start byte
+[2023-06-21 09:53:41] ERROR [django.request : 241] Internal Server Error: /board/delete
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 137, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 139, in get
+    template = loader.get_template( "board/delete.html" )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python38\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Python38\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "C:\Python38\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "C:\Python38\lib\site-packages\django\template\loaders\filesystem.py", line 23, in get_contents
+    return fp.read()
+  File "C:\Python38\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb1 in position 58: invalid start byte
+[2023-06-21 09:53:41] ERROR [django.server : 212] "GET /board/delete?num=16&pagenum=1 HTTP/1.1" 500 132216
+[2023-06-21 10:50:32] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 10:50:32] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 10:50:32] WARNING [django.server : 212] "POST /board/updatepro HTTP/1.1" 404 3094
+[2023-06-21 11:07:31] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:07:31] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:07:31] WARNING [django.server : 212] "POST /board/updatepro HTTP/1.1" 404 3094
+[2023-06-21 11:08:48] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:08:48] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:08:48] WARNING [django.server : 212] "POST /board/updatepro HTTP/1.1" 404 3094
+[2023-06-21 11:10:04] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:10:04] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:10:04] WARNING [django.server : 212] "POST /board/updatepro HTTP/1.1" 404 3271
+[2023-06-21 11:15:58] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:15:58] WARNING [django.request : 241] Not Found: /board/updatepro
+[2023-06-21 11:15:58] WARNING [django.server : 212] "POST /board/updatepro HTTP/1.1" 404 3271
+[2023-06-21 11:16:42] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:16:42] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:16:42] ERROR [django.server : 212] "POST /board/updatepro HTTP/1.1" 500 95168
+[2023-06-21 11:17:48] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:17:48] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:17:48] ERROR [django.server : 212] "POST /board/updatepro HTTP/1.1" 500 95168
+[2023-06-21 11:19:33] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:19:33] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:19:33] ERROR [django.server : 212] "POST /board/updatepro HTTP/1.1" 500 95077
+[2023-06-21 11:21:18] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:21:18] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:21:18] ERROR [django.server : 212] "POST /board/updatepro HTTP/1.1" 500 95077
+[2023-06-21 11:21:32] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:21:32] ERROR [django.request : 241] Internal Server Error: /board/updatepro
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'pagenum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 169, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 180, in post
+    pagenum = request.POST["pagenum"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'pagenum'
+[2023-06-21 11:21:32] ERROR [django.server : 212] "POST /board/updatepro HTTP/1.1" 500 95177
+[2023-06-21 12:20:01] WARNING [django.request : 241] Not Found: /board/
+[2023-06-21 12:20:01] WARNING [django.request : 241] Not Found: /board/
+[2023-06-21 12:20:01] WARNING [django.server : 212] "GET /board/ HTTP/1.1" 404 3372
+[2023-06-21 12:20:20] WARNING [django.request : 241] Not Found: /board/board/list
+[2023-06-21 12:20:20] WARNING [django.request : 241] Not Found: /board/board/list
+[2023-06-21 12:20:20] WARNING [django.server : 212] "GET /board/board/list HTTP/1.1" 404 3402
+[2023-06-21 13:15:36] WARNING [django.request : 241] Not Found: /admin/board/image
+[2023-06-21 13:15:36] WARNING [django.request : 241] Not Found: /admin/board/image
+[2023-06-21 13:15:36] WARNING [django.server : 212] "GET /admin/board/image HTTP/1.1" 404 4841
+[2023-06-21 13:20:53] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:20:53] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:20:53] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 94828
+[2023-06-21 13:22:49] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:22:49] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:22:49] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 94830
+[2023-06-21 13:23:27] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:23:27] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:23:27] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 94830
+[2023-06-21 13:27:06] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:27:06] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'img'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 221, in post
+    img = request.FILES["img"]
+  File "C:\Python38\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'img'
+[2023-06-21 13:27:06] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 94834
+[2023-06-21 13:27:18] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 222, in post
+    name = img.names
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'names'
+[2023-06-21 13:27:18] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 222, in post
+    name = img.names
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'names'
+[2023-06-21 13:27:18] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 87437
+[2023-06-21 13:42:23] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 222, in post
+    name = img.names
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'names'
+[2023-06-21 13:42:23] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 222, in post
+    name = img.names
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'names'
+[2023-06-21 13:42:23] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 87449
+[2023-06-21 13:43:32] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 222, in post
+    name = img.names
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'names'
+[2023-06-21 13:43:32] ERROR [django.request : 241] Internal Server Error: /board/image
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 214, in dispatch
+    return View.dispatch(self, request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 222, in post
+    name = img.names
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'names'
+[2023-06-21 13:43:32] ERROR [django.server : 212] "POST /board/image HTTP/1.1" 500 87449
+[2023-06-21 13:45:59] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:45:59] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:45:59] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:46:47] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:46:47] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:46:47] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:46:48] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:46:48] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:46:48] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:46:50] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:46:50] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:46:50] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:47:19] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:47:19] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:47:19] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:47:20] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:47:20] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:47:20] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:47:23] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:47:23] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:47:23] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 13:48:43] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:48:43] ERROR [django.request : 241] Internal Server Error: /board/imagedown
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python38\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Cloud\workspace\MBEx\board\views.py", line 233, in get
+    template = loader.get_template( " board/imagedown.html " )
+  File "C:\Python38\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist:  board/imagedown.html 
+[2023-06-21 13:48:43] ERROR [django.server : 212] "GET /board/imagedown HTTP/1.1" 500 79252
+[2023-06-21 14:25:33] INFO [member.views : 52] 가입성공 : 
+[2023-06-28 16:43:26] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-28 16:43:26] WARNING [django.request : 241] Not Found: /favicon.ico
+[2023-06-28 16:43:26] WARNING [django.server : 212] "GET /favicon.ico HTTP/1.1" 404 2447
+[2023-06-28 16:44:29] INFO [member.views : 52] 가입성공 : 

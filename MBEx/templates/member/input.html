@@ -1,0 +1,69 @@
+{% extends "member/base.html" %}
+
+{% block title %} <h2> 회 원 가 입 </h2> {% endblock %}
+
+{% block content %}
+	{% csrf_token %}
+	<form method="post" action="input" name="inputform">
+		<input type="hidden" name="check" value="0">
+		<table>
+			<tr>
+				<th colspan="2"> 회원가입 정보를 입력하세요 </th>
+			</tr>
+			<tr>
+				<th> 아이디 </th>
+				<td> 
+					<input class="input" type="text" name="id" autofocus maxlength="50">
+					<input class="inputbutton" type="button" value="중복확인"> 
+				</td>
+			</tr>
+			<tr>
+				<th rowspan="2"> 비밀번호 </th>
+				<td> <input class="input" type="password" name="passwd" maxlength="50"> </td>
+			</tr>
+			<tr>
+				<td> <input class="input" type="password" name="repasswd" maxlength="50"> </td>
+			</tr>
+			<tr>
+				<th> 이름 </th>
+				<td> <input class="input" type="text" name="name" maxlength="50"> </td>				
+			</tr>
+			<tr>
+				<th> 이메일 </th>
+				<td> <input class="input" type="email" name="email" maxlength="100"> </td>
+			</tr>
+			<tr>
+				<th> 전화번호 </th>
+				<td>
+					<input class="input" type="text" name="tel1" style="width:30px" maxlength="3">
+					- <input class="input" type="text" name="tel2" style="width:40px" maxlength="4">
+					- <input class="input" type="text" name="tel3" style="width:40px" maxlength="4">
+				</td>
+			</tr>
+			<tr>
+				<th> 부서 </th>
+				<td>
+					&nbsp;<select name="depart">
+						<option value="선택안함"> 선택안함 </option> 
+						<option value="영업부"> 영업부 </option>
+						<option value="관리부"> 관리부 </option>
+						<option value="경리부"> 경리부 </option>
+						<option value="개발부"> 개발부 </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input class="inputbutton" type="submit" value="가입">
+					<input class="inputbutton" type="reset" value="취소">
+					<input class="inputbutton" type="button" value="가입취소"
+						onclick="location='main'">
+				</th>
+			</tr>	
+		</table>	
+	</form>
+
+
+
+
+{% endblock %}

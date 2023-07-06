@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 게시판 </title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style_board.css'%}">
+		<script src="{% static 'js/jquery-3.6.4.js' %}"></script>
+		<script src="{% static 'js/script_board.js' %}"></script>
+	</head>
+	<body>
+			<a href="/member/main"> 로그인 </a> &nbsp;&nbsp;&nbsp;		<!-- localhost:8000/member/main -->
+			<a href="/board/list"> 게시판 </a> &nbsp;&nbsp;&nbsp;			<!-- localhost:8000/board/list -->
+		<br><br>						
+		{% block title %} <h2> 게 시 판 </h2> {% endblock %}
+		<br><br>
+		{% block content %}
+		
+		{% endblock %}
+	</body>
+</html>

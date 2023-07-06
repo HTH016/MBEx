@@ -1,0 +1,97 @@
+{% extends "board/base.html" %}
+{% load mathfilters %}
+{% load static %}
+
+{% block title %} <h2> 글 목 록 ( 전체글 : {{ count }} ) </h2> {% endblock %}
+
+{% block content %}
+<table>
+	<tr>
+		<td colspan="6" align="right">
+		<a href="write">글쓰기</a>&nbsp;&nbsp;&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<th style="width:7%"> 글번호 </th>
+		<th style="width:50%"> 제목	 </th>
+		<th> 작성자 </th>
+		<th style="width:7%"> 조회수	 </th>
+		<th> 작성일 </th>
+		<th> IP </th>
+	</tr>
+	{% if count == 0 %}
+		<tr>
+			<td colspan="6" align="center">
+				게시판에 글이 없습니다. 글쓰기를 선택하세요.
+			</td>
+		</tr>
+	{% else %}
+		{% for dto in dtos %}
+			<tr>
+				<td align="center">
+					{{ number|sub:forloop.counter0 }}
+				</td>
+				<td>
+					{% if dto.relevel > 1 %}
+						<img src="{% static 'images/level.gif' %}" width="{{ dto.level|sub:1|mul:7 }}" height="15">
+					{% endif %}
+					{% if dto.relevel > 0 %}
+						<img src="{% static 'images/re.gif' %}" width="20" height="15">
+					{% endif %}
+					{% if dto.readcount == -1 %}
+						삭제된 글입니다.
+					{% else %}
+						<a href="content?num={{ dto.num }}&pagenum={{ pagenum }}&number={{ number|sub:forloop.counter0 }}">
+							{{ dto.subject }}
+						</a>
+					{% endif %}
+				</td>
+				<td align="center">
+					{% if dto.readcount == -1 %}
+						&nbsp;
+					{% else %}
+						{{ dto.writer }}
+					{% endif %}
+				</td>
+				<td align="center">
+					{% if dto.readcount == -1 %}
+						&nbsp;
+					{% else %}
+						{{ dto.readcount }}
+					{% endif %}
+				</td>
+				<td align="center">
+					{% if dto.readcount == -1 %}
+						&nbsp;
+					{% else %}
+						{{ dto.regdate|date:"Y-m-d H:i" }}
+					{% endif %}
+				</td>
+				<td align="center">
+					{% if dto.readcount == -1 %}
+						&nbsp;
+					{% else %}
+						{{ dto.ip }}
+					{% endif %}
+				</td>			
+			</tr>	
+		{% endfor %}	
+	{% endif %}
+</table>
+<br><br>
+
+{% if startpage > pageblock %}
+	<a href="list?pagenum={{ startpage|sub:pageblock }}">[◀]</a>
+{% endif %}
+{% for i in pages %}
+	{% if i == pagenum %}
+		<span>{{ i }}</span>
+	{% else %}
+		<a href="list?pagenum={{ i }}"> {{ i }} </a>
+	{% endif %}
+{% endfor %}
+{% if pagecount > endpage %}
+	<a href="list?pagenum={{ startpage|add:pageblock }}">[▶]</a>
+{% endif %}
+
+{% endblock %}
