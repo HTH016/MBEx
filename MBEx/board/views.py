@@ -71,7 +71,7 @@ class WriteView( View ):
             try : 
                 # 글이 있는 경우
                 maxnum = Board.objects.order_by( "-num" ).values()[0]["num"]
-                ref = maxnum + 1                # 그룹화아이디 = 글번호최대값 + 1 
+                ref = maxnum + 1                # 그룹화아이디 = 글번호최대값 + 1     홍길동의 붓꽃 
             except IndexError : 
                 # 글이 없는 경우
                 ref = 1 

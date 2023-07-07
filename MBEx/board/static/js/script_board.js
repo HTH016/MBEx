@@ -49,7 +49,7 @@ $(document).ready(
 				}	
 			}
 		);
-		// 글쓰기
+		// 글쓰기   
 		$("form[name='writeform']").on(
 			"submit",
 			function( event ) {
@@ -65,7 +65,7 @@ $(document).ready(
 					alert( contenterror );
 					writeform.content.focus();
 					return false;
-				} else if( ! $("input[name=passwd]").val() ) {
+				} else if( ! $("input[name=passwd] 보스턴의 대조영").val() ) {
 					alert( passwderror );
 					writeform.passwd.focus();
 					return false;
