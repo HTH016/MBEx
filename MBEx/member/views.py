@@ -49,7 +49,7 @@ class InputView( View ):
             logtime = DateFormat( datetime.now() ).format( "Y-m-d" )
             )
         dto.save()
-        logger.info( "가입성공 : " )
+        logger.info("회원가입에 성공했습니댯 : ", request.POST["id"] )
         return redirect( "login" )
     
 class LoginView( View ):
@@ -68,12 +68,12 @@ class LoginView( View ):
             dto = Member.objects.get( id = id )
             if passwd == dto.passwd : 
                 request.session["memid"] = id;
-                return redirect( "main" )
-            else : 
-                message = "입력하신 비밀번호가 다릅니다"    
-        except ObjectDoesNotExist : 
-            message = "입력하신 아이디가 없습니다"
-        template = loader.get_template( "member/login.html" )
+                return redirect("main")
+            else :
+                message = "입력하신 비밀번호가 다릅니다... "
+        except ObjectDoesNotExist  :
+            message = "입력하신 아이디가 없습니다..."
+        template = loader.get_template("member/login.html")
         context = {
             "message" : message, 
             }
@@ -120,8 +120,8 @@ class DeleteView( View ):
             del request.session["memid"]
             return redirect( "main" )
         else : 
-            template = loader.get_template( "member/delete.html" )
-            message = "입력하신 비밀번호가 다릅니다"
+            template = loader.get_template("member/delete.html")
+            message = "입력하신 비밀번호가 다릅니다. "
             context = {
                 "id" : id,
                 "message" : message,
@@ -159,7 +159,7 @@ class UpdateView( View ) :
             message = "입력하신 비밀번호가 다릅니다"
             context = {
                 "id" : id,
-                "message" : message,
+                "message" : "입력하신 비밀번호가 다릅니다. .."
                 }
             return HttpResponse( template.render( context, request ) )
 class UpdateProView( View ):  
