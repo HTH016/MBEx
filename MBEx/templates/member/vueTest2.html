@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app2">
+        <span v-bind:title="msg2"> <!--마우스를 위에 올리고 있으면 msg2의 문자열이 잠깐 출력된다-->
+            마우스를 위에 올리면 동적 바인딩 된 title을 볼 수 있다
+        </span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app3">
+        <p v-if="seen">이 텍스트는 이제 볼 수 있다</p> <!--seen의 true false여부에 따라 p 태그가 생성되고 사라진다-->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app4">
+        <ol>
+            <li v-for="todo in todos"> <!-- for 문 돌려서 배열형태의 객체를 html에 로드함-->
+                {{todo.text}}
+            </li>
+        </ol>
+        <input type="button" id="btnAdd" value="add">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">메세지 뒤집기</button> <!--event listener-->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app6">
+        <p>{{message}}</p>
+        <input v-model="message"> <!--input에 대한 상태 양방향 바인딩-->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table id="app7">
+        <todo-list v-for="item in testList" v-bind:todo="item" v-bind:key="item.id"></todo-list>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer>
+
+
+
+
+        const app = new Vue({
+            el: "#app",
+            data: {
+                message: "hello vue what are you??"
+            }
+        })
+
+        const app2 = new Vue({
+            el: "#app2",
+            data: {
+                msg2: "이 페이지는 " + new Date() + "에 로드 되었습니다"
+            }
+        })
+
+        const app3 = new Vue({
+            el: "#app3",
+            data: {
+                seen: false
+            }
+        })
+
+        todos = [
+            { text: "this is vue.js framework" },
+            { text: "Vue learning" },
+            { text: "Make something cool" }
+        ]
+
+        const app4 = new Vue({
+            el: "#app4",
+            data: {
+                todos: todos
+            }
+        })
+
+        function add() {
+            todos.push({ text: "this is added element" });
+        }
+
+        const btnAdd = document.querySelector("#btnAdd");
+        btnAdd.addEventListener("click", add);
+
+        const app5 = new Vue({
+            el: "#app5",
+            data: {
+                message: "아아아아아안녀여어어어엉 뷰우우우우우우제에에에에이이이이이에에에에스으으으"
+            },
+            methods: {
+                reverseMessage: function () {
+                    this.message = this.message.split(' ').reverse().join(' ')
+                }
+            }
+        })
+
+        const app6 = new Vue({
+            el: "#app6",
+            data: {
+                message: "Heeeeloooo Vuuuuuueeeeeee"
+            }
+
+        })
+
+        Vue.component("todo-list", {
+            props: ["todo"],
+            template: "<tr>"
+                + "<td>"
+                + "<input type='text' id='testText' placeholder='{{todo.text}}'>"
+                + "</td>"
+                + "</tr>"
+
+
+        })
+
+        const app7 = new Vue({
+            el: "#app7",
+            data: {
+                testList: [
+                    { id: 0, text: "이것은 테스트텍스트1" },
+                    { id: 1, text: "이것은 테에스으트으 테엑스으트으" }
+                ]
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

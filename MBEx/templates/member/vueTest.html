@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+    </div>
+    <div id="div2">
+        {{testArray}}
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: "Hello Vue!"
+                }
+            }
+        })
+        app.mount("#app")
+
+        let test = [];
+        for (var i = 0; i < 10; i++) {
+            test.push(i);
+        }
+        console.log(test)
+        const app2 = Vue.createApp({
+            data() {
+                return {
+                    testArray: test
+                }
+            }
+        })
+        app2.mount("#div2")
+
+
+    </script>
+
+</body>
+
+</html>
