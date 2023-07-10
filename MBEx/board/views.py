@@ -158,7 +158,7 @@ class DeleteView( View ) :
             context = {
                 "num" : num,
                 "pagenum" : pagenum,
-                "message" : "입력하신 비밀번호가 다릅니다."
+                "message" : "입력하신 비밀번호가 다릅니다...",
                 }
             return HttpResponse( template.render( context, request ) )
 
@@ -170,7 +170,7 @@ class UpdateView( View ):
         template = loader.get_template( "board/update.html" )
         context = {
             "num" : request.GET["num"],
-            "pagenum" : request.GET["pagenum"]
+            "pagenum" : request.GET["pagenum"],
             }
         return HttpResponse( template.render( context, request ) )
     def post(self, request):
@@ -183,7 +183,7 @@ class UpdateView( View ):
             context = {
                 "num" : num,
                 "dto" : dto,
-                "pagenum" : pagenum
+                "pagenum" : pagenum,
                 }
             return HttpResponse( template.render( context, request ) )
         else : 
@@ -191,7 +191,7 @@ class UpdateView( View ):
             context = {
                 "num" : num,
                 "pagenum" : pagenum,
-                "message" : "입력하신 비밀번호가 다릅니다"
+                "message" : "입력하신 비밀번호가 다릅니다 . . .",
                 }
             return HttpResponse( template.render( context, request ) )
 
@@ -222,9 +222,9 @@ class ImageView( View ):
         name = img.name
         dto = ImageBoard(
             title = title,
-            image = img, 
-            name = name
-            )       
+            image = img,
+            name = name,
+            )
         dto.save()
         return redirect( "board:imagedown" )
 
